@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basics of HTML</title>
+    <meta name="description" content="Page description should written here" />
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">
+        body {
+            color: red;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: normal;
+            /* color: royalblue; */
+        }
+    </style>
+    <script type="text/javascript">
+        function captilizeWord() {
+            var firstName = document.getElementById("firstName");
+            firstName.value = firstName.value.toUpperCase();
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Here's the sample of <strong>basic</strong> <em>Web development</em></h1>
+    <div>Enter your name to captilize</div>
+    <p>Captilize Word</p><input type="text" id="firstName" onchange="captilizeWord()" placeholder="Enter your name" />
+</body>
+
+</html>
