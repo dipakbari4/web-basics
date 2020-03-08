@@ -14,9 +14,22 @@
         p {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
         }
-        tr, td{
-            padding: 10px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;           
+
+        table {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
         }
     </style>
 </head>
@@ -25,7 +38,6 @@
     <p>This example will demonstrate the uses of <strong>table</strong> tag in HTML</p>
 
     <table>
-        <th>Leaderboard</th>
         <tr>
             <td>Players</td>
             <td>Score</td>
