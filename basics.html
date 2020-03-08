@@ -2,23 +2,35 @@
 <html>
 
 <head>
+    <!-- Title of HTML Document -->
     <title>Basics of HTML</title>
+    <!-- Metadata of HTML Page -->
     <meta name="description" content="Page description should written here" />
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Style definition for HTML document -->
     <style type="text/css">
         body {
+            /* The entire element of HTML will inherit this color  */
             color: red;
         }
 
+        /* All the 'h1' tags will inherit this style definition */
         h1 {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-style: normal;
-            /* color: royalblue; */
+            color: royalblue;
+        }
+
+        #nameLabel {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+            color: skyblue;
         }
     </style>
     <script type="text/javascript">
+        // This function will nothing more than capitalize word inside the input tag
         function captilizeWord() {
             var firstName = document.getElementById("firstName");
             firstName.value = firstName.value.toUpperCase();
@@ -28,7 +40,7 @@
 
 <body>
     <h1>Here's the sample of <strong>basic</strong> <em>Web development</em></h1>
-    <div>Enter your name to captilize</div>
+    <div id="nameLabel">Enter your name to captilize</div>
     <p>Captilize Word</p><input type="text" id="firstName" onchange="captilizeWord()" placeholder="Enter your name" />
 </body>
 
